@@ -1,0 +1,365 @@
+:root{
+    --transition: all 0.5s linear;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #5184a6;
+    color: white;
+    padding: 0.1rem;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    
+}
+
+header h1 {
+    margin: 0px;
+    margin-right: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+main {
+    padding: 3rem;
+}
+
+nav span{
+    color:darkgoldenrod;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.firstsection{
+    margin-top: 150px;
+}
+
+section h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+section p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul{
+    list-style: none;;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    width: 300px;
+    margin-left: 45%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.image-description {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.foodCard{
+    transition: var(--transition);
+    background: rgb(202, 202, 202);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+}
+
+.foodCard:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+}
+
+
+.foodCard{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.foodCenter{
+    margin-top: 150px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .foodCenter{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+    }
+}
+
+@media screen and (min-width:1170px){
+    .foodCenter{
+        grid-template-columns: 1fr 1fr 1fr;;
+    }
+}
+
+.foodName{
+    font-size: 24px;
+    text-align: center;
+}
+
+.foodImageContainer{
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.foodLocation{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foodImage{
+    height:15rem;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:768px){
+    .logo{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    .firstsection{
+        margin-top: 100px;
+    }
+
+}
+
+.attractionCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.attractionImage img{
+    width: 589px;
+}
+
+.attractionInfo{
+    padding: 20px;
+}
+
+.attractionInfo h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.attractionInfo p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.attractionCenter{
+    margin-top: 150px;
+}
+
+.festivalCenter{
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 992px){
+    .attractionCard{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border-bottom: #333 1px solid;;
+    }
+    .attractionImage{
+        margin-bottom: 50px;
+    }
+    .attractionCenter{
+        margin-top: 150px;
+    }
+    .firstsection{
+        margin-top: 150px;
+    }
+    .foodCenter{
+        margin-top: 150px;
+    }
+    .festivalCenter{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .attractionImage img{
+        width: 100%;
+    }
+}
+
+.footer-icons{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    font-size:2rem;
+    gap:50px;
+}
+
+@media screen and (max-width: 768px){
+    .attractionCenter{
+        margin-top: 50px;
+    }
+    .firstsection{
+        margin-top: 50px;
+    }
+    .foodCenter{
+        margin-top: 50px;
+    }
+    .festivalCenter{
+        margin-top: 50px;
+    }
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="submit"], button[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: red;
+    color: #000;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+}
+
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .contactHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+
+  .contactHeader h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .contactHeader p {
+    font-size: 18px;
+    color: #666;
+  }
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>台灣旅遊網站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img src="./image/logo.png" class="logo"></h1>
+        <nav class="navbar">
+            <ul class="navList">
+                <li><a href="index.html" class="nav-link"><span>台灣地理</span></a></li>
+                <li><a href="attractions.html" class="nav-link">熱門景點</a></li>
+                <li><a href="food.html" class="nav-link">人氣美食</a></li>
+                <li><a href="festivals.html" class="nav-link">台灣節日</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contactHeader">
+            <h1>聯絡我們</h1>
+          </div>
+<form>
+    <label for="name">姓名:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">電話:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="email">電郵:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">信息:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <div><button class="contactButton" type="submit">發送</button>
+    </div>
+  </form>
+    </main>
+    <footer>
+        <a href="contact.html">返回頁頂</a>
+        <a href="contact.html">聯絡我們</a>
+        <ul class="footer-icons">
+            <li>
+                <a href="https://www.facebook.com/" class="footer-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" class="footer-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" class="footer-icon">
+                    <i class="fab fa-youtube"></i>
+                    </a>
+            </li>
+        </ul>
+        <p>資料來源:中華民國交通部觀光署</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
